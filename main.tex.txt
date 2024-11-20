@@ -1,0 +1,280 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage {geometry}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{enumitem}
+\geometry{a4paper, margin=0.9in, tmargin=0.8in}
+\captionsetup{font=small}
+\renewcommand{\thepage}{\textbf{\arabic{page}}}
+
+\title{Lab1}
+\author{421701Voinov}
+
+\begin{document}
+    \setcounter{page}{39}
+    \setcounter{figure}{6}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{images/first.png}
+        \caption{Asymmetric ontological structure with corresponding dynamic structure.}
+        \label{fig:first}
+    \end{figure}
+    
+    \begin{multicols}{2}
+    \begin{figure}[H] %делает так чтоб картинка стояла именно на своем месте
+        \includegraphics[width=1\linewidth]{images/second.png}
+        \caption{Strong connected orgraph backward flow.}
+        \label{fig:second}
+    \end{figure}
+
+\noindent dographs. \par Sensors (receptors) are acyclic subgraphs whose elements are not reachable from any resonator.
+\par Dispensers (effectors) are acyclic subgraphs whose
+elements are not reachable from any resonator.
+\par Transmitters are acyclic subgraphs whose elements
+are reachable from at least one resonator and from
+whose elements at least one other (different) resonator
+is reachable.
+\par Transmitters and transmitters are consumers.
+\par Sensors and transmitters are suppliers.
+\par We can also consider generating resonators (not reachable from other resonators) and consuming resonators
+(reachable from other resonators).
+\par Among resonators, we can distinguish unimodal (harmonic) resonators and multimodal (non-harmonic) resonators (multimodal waveform). All multimodal resonators are consuming resonators. Each mode is phase
+shifted by less than a period.
+\par A resonator-free subgraph can be extracted from any
+structure, which is the set of all vertices and edges
+reachable from the receptor elements.
+\par The remaining edges together with their initial and
+final vertices form the resonator subpseudograph.
+\par A receptor element is called a sensor element if it has
+no supplier.
+\par A dispenser element is called a dispenser element if
+it has no consumer.
+\par If there are no suppliers (sensors or transmitters)
+whose elements are suppliers to the generating resonator,
+then all its elements are sensor elements.
+\par If there are no consumers (dispensers or transmitters)
+whose elements are consumers of the resonator, then all
+its elements are dispenser elements.
+\par The method for determining the capacitive characteristics of structures used in problem solving is summarized
+in the following principles.
+\par Each resonator has a period, which is the partial GCD
+$T$ of its own period and periods of all (its) suppliers,
+from which it consumes, to the GCD of this GCD (T)
+and all its divisors $k$, for which the convolution of the
+phases $k * n$ with the phases (taking into account their
+shifts) of all modes (waveforms) of the signal is equal to
+$k T - k * ((T - k)!)$.
+\par For each consumer (dispenser or transmitter) element,
+the period is calculated similarly, except that instead
+of the GCD of the period itself and the periods of all
+(its) suppliers from which it consumes, the GCD of the
+periods of all its suppliers is taken.
+\par For each supplier element, the potential period, which
+is the period of the consumer in the inverted pseudograph (inverse ratio pseudo-graph), can be similarly
+determined.
+\par For sensor elements, it may be assumed, unless otherwise accepted, that their period is equal to their potential
+period.
+\par For each sensor element (supplier), a period can be
+calculated that is equal to the LCM of the periods of all
+its consumers (taking into account the phase shift).
+\par The entropy of a set of resonators is calculated on a
+period equal to the GCD of periods of all resonators of
+this set.
+\par If resonators are present, then the (maximum possible)
+entropy of the entire pseudograph is valid and can be
+computed as the greatest entropy of the greatest entropy
+of the greatest entropies of the smallest sets of resonators
+cutting the set (paths) of the set of smallest sets of paths
+connecting all sensor elements to all dispenser elements.
+\par If all sensor elements and dispenser elements are
+resonator elements, then the (minimum required) entropy
+of the entire pseudograph is valid and can be computed
+as the smallest entropy of the smallest entropies of the
+smallest sets of resonators cutting the set (paths) of
+the set of smallest sets of paths connecting all sensor
+elements to all dispenser elements.
+\par If all sensor elements and dispenser elements are
+not resonator elements, then the (minimum necessary)
+entropy of the whole pseudograph is invalid (imaginary)
+and is computed on the period equal to the LCM of
+all periods (elements) of the subpseudographs of the
+pseudograph and the maximum of the lengths of the (simple) paths from the sensor element to the dispenser
+element.
+\par The entropy of an unbound pseudograph can be calculated as the average (minimum, maximum, etc.) of the entropies of its components on a period equal to the LCM
+of periods (on which calculations for) its components
+were performed.
+\begin{center}
+    Conclusions
+\end{center}
+\par The classification of enumerable finite structures and
+their representations is proposed, relations between
+classes of this classification are considered. The classification is oriented on unification of knowledge representation with finite structure and algorithmization of
+solutions of problems of investigation of topological
+and metric properties of structures of meaning space in
+order to exclude redundant fragments of knowledge at
+representation in meaning space.
+\par Approaches are considered and concepts for investigation of structural-topological and metric properties of
+structures of the sense space for the purpose of optimization of structures of knowledge bases are proposed.
+\par General quantitative evaluations of mappings of finite
+structures with accuracy up to order preservation to
+ordinal and metric scales in the study of corresponding
+properties of these structures are given. An approach to
+the classification of quantitative features of finite structures is proposed. An algorithm for metric computation
+on the union of extensional closures of sense space
+concepts is proposed.
+\par A model and a method for computing entropy (as
+one of the invariants) for finite dynamic structures of
+information processing models (in accordance with the
+models of graph dynamical system and generalized finite
+automaton [64]) based on analytical calculation of transition probabilities on the state graph in accordance with
+its structure are proposed.
+\par The features of structures of semantic space that can
+be used as invariants in order to reduce the time to
+identify redundant fragments in the semantic space are
+considered.
+\par A model of operational-information space is proposed,
+which corresponds to the model of model-parametric
+space [67], is oriented to solving the problems of
+knowledge management [15], [50], [56] in information
+processing and the study of the relationship between
+the attributes of structures with operational semantics
+expressed by the operational semantics of small and large
+step.
+\par An approach to the consideration of infinite structures
+through (limit) sequences of finite structures converging
+to them is proposed in accordance with the classification
+of finite structures, the model of knowledge specification
+[5], the algebraic system of extensible sets and the
+metamodel of semantic space [56].
+\begin{center}
+    References
+\end{center}
+{\footnotesize
+\begin{enumerate}[label={[\arabic*]}, nosep]
+\item V.V. Golenkov. Otkrytyi proekt, napravlennyi na sozdanie
+tekhnologii komponentnogo proektirovaniya intellektual’nykh sistem [An open project aimed at creating a technology for the component design of intelligent systems], Otkrytye semanticheskie tekhnologii proektirovaniya intellektual’nykh system [Open
+semantic technologies for intelligent systems], 2013, pp. 55—78.
+\item V.V. Golenkov, N.A. Gulyakina, D.V. Shunkevich. Otkrytaya
+tekhnologiya ontologicheskogo proektirovaniya, proizvodstva i
+ekspluatatsii semanticheski sovmestimykh gibridnykh intellektual’nykh komp’yuternykh system [Open technology for ontological design, production and operation of semantically compatible
+hybrid intelligent computer systems], Minsk, Bestprint, 2021. 690
+p.
+\item Z. Pawlak. Rough sets. International Journal of Parallel Programming, 1982, vol. 11, no. 5, pp. 341—356.
+\item D. Dubois, H. Prade. Rough fuzzy sets and fuzzy rough sets
+International Journal of General Systems, 1990, vol. 17, no. (2-3),
+pp. 191-–209.
+\item V.P. Ivashenko. Modeli i algoritmy integratsii znanii na osnove
+odnorodnykh semanticheskikh setei (disc. na soiskanie stepeni
+kand. tekhn. nauk: 05.13.17) [Models and algorithms for knowledge integration based on homogeneous semantic networks (thesis
+for the degree of Candidate of Technical Sciences: 05.13.17)] ,
+Minsk, BGUIR, 2014, 152 p.
+\item V.P. Ivashenko Operatsionnaya semantika mnogoagentnykh sistem obrabotki znanii [Operational semantics of multi-agent
+knowledge processing systems], Information Technologies and
+Systems, 2020, Minsk, BGUIR, pp. 78–79.
+\item V.P. Ivashenko. Modeli i algoritmy integratsii znanii na osnove
+odnorodnykh semanticheskikh setei [Models and algorithms for
+knowledge integration based on homogeneous semantic networks], Otkrytye semanticheskie tekhnologii proektirovaniya intellektual’nykh system [Open semantic technologies for intelligent
+systems], 2015, Minsk, BGUIR, pp. 111—132.
+\item V.P. Ivashenko Tekhnologiya razrabotki programmnykh komponentov intellektual’nykh sistem na osnove integratsionnoi platformy [Technology for the development of software components
+of intelligent systems based on an integration platform], Information Technologies and Systems, 2021, Minsk, BGUIR, pp. 84–85.
+\item V.P. Ivashenko. Ontologicheskaya model’ prostranstvennovremennykh otnoshenii sobytii i yavlenii v protsessakh obrabotki
+znanii [Ontological model of the space-time relations of the event
+and the phenomenon in the processes of knowledge processing]
+2017, vol. 5, no. 107, Minsk, BSUIR, pp. 13–17.
+\item V.P. Ivashenko. String processing model for knowledge-driven
+systems. Minsk, Doklady BGUIR, 2020, vol. 18, no. 6, pp. 33–40.
+\item Yu. Manin, M. Marcolli. Semantic spaces. Published, Location,
+2016. 32 p. (arXiv)
+\item V.V. Golenkov, O.E. Eliseeva, V.P. Ivashenko. Predstavlenie i
+obrabotka znanii v parallel’nykh grafodinamicheskikh assotsiativnykh mashinak [Representation and processing of knowledge
+in parallel graphodynamic associative machines], Minsk, BGUIR,
+2001. 412 p.
+\item G. Rozenberg, A. Salomaa. Handbook of Formal Languages,
+Volume 1: Word, Language, Grammar. Verlag, Berlin, Heidelberg,
+Springer, 1997. 873 p.
+\item B. Smith. Metody i algoritmy vychislenii na strokakh [Computing
+Patterns in Strings], Moscow, OOO “I.D. Williams”, 2006. 496
+p.
+\item D.A. Pospelov. Situatsionnoe upravlenie: teoriya i praktika [Situational management: theory and practice], Moscow, Nauka, 1986.
+288 p.
+\item A. Blass. A game semantics for linear logic. Annals of Pure and
+Applied Logic, 1992, vol. 56, pp. 183–220.
+\item J.H. Conway. On Numbers and Games. AK Peters/CRC Press,
+2000. 242 p.
+\item G. Plotkin. Call-by-name, call-by-value and the lambda-calculus.
+Theoretical Computer Science, 1975, vol. 1, no. 2. pp. 125–159.
+\item D. Scott, Ch. Strachey. Toward a mathematical semantics for computer languages. Proceedings of the Symposium on Computers
+and Automata, Microwave Research Institute Symposia Series,
+Polytechnic Institute of Brooklyn Press, New York, 1971, vol.
+21, pp. 19—46.
+\item F. Daneš. On Prague school functionalism in linguistics. Functionalism in Linguistics, 1987, pp. 3–38.
+\item A. R. D. Mathias. Unordered pairs in the set theory of Bourbaki
+1949, Archiv der Mathematik, 2010, vol. 94, pp. 1–10.
+\item W. Quine. On ordered pairs. Journal of Symbolic Logic, 1945,
+vol. 10, no. 3, pp. 95—96.
+\item J. Heijenoort. From Frege to Gödel. A source book in mathematical logic, 1879–1931. Cambridge, Mass., Harvard University
+Press, 1967, 664 p.
+\item C. Kuratowski. Sur la notion de l’ordre dans la Théorie des
+Ensembles. Fundamenta Mathematicae, 1921, vol. 2, no. 1,pp.
+161–171.
+\item A.P. Morse. A Theory of Sets. Academic Press, 1965, 130 p.
+\item A. Levy. Basic Set Theory, Springer-Verlag, 1979, 391 p.
+\item K.J. Devlin. Fundamentals of contemporary set theory. Universitext. Springer-Verlag, 1979, 182 p.
+\item J.M. Lee. Introduction to Topological Manifolds, Springer, 2011,
+452 p.
+\item G. W. F. Hegel. Nauka logiki [Science of Logic]: v 3-h t. T.1,
+Moscow, “Mysl”’, 1970. 501 p.
+\item R.T.W. Arthur. Leibniz on Time, Space, and Relativity, Oxford
+University Press, 2022, 432 p.
+\item D. Hilbert. On the infinite. In Philosophy of Mathematics (1984),
+Selected Readings, Cambridge, Cambridge University Press,
+2012, pp. 183–201.
+\item D. Bohm and B.J. Hiley. The Undivided Universe: An Ontological
+Interpretation of Quantum Theory, London, Routledge, 1993. xii
++ 397 p.
+\item D. Bohm. Wholeness and the Implicate Order, London, Routledge, 2002. 284 p.
+\item V.V. Nalimov, Zh.A. Drogalina. Real’nost’ nereal’nogo. Veroyatnostnaya model’ bessoznatel’nogo [The reality of the unreal.
+Probabilistic model of the unconscious], Moscow, Mir idei, AO
+Akron, 1995. 432 p.
+\item V.V. Nalimov. Spontannost’ soznaniya. Veroyatnostnaya teoriya
+smyslov i smyslovaya arkhitektonika lichnosti [Spontaneity of
+consciousness. Probabilistic theory of meanings and semantic
+architectonics of personality], Moscow, Prometei, 1989. 287 p.
+\item V.V. Nalimov. Veroyatnostnaya model’ yazyka. O sootnoshenii
+estestvennykh i iskusstvennykh yazykov [Probabilistic model of
+language. On the relationship between natural and artificial languages] Moscow, Nauka, 1979. 304 p.
+\item S. Roman, Advanced Linear Algebra, Graduate Texts in Mathematics, vol. 135 (2nd ed.), Berlin, New York, 2005. 488 p.
+\item M.A. Armstrong, Basic Topology [1979], Undergraduate Texts in
+Mathematics, Springer, 1983. 263 p.
+\item L. Collatz. Functional Analysis and Numerical Mathematics, New
+York, San Francisco, London, Academic Press, 1966. xx 473 p.
+\item J. Heinonen. Lectures on analysis on metric spaces, New York,
+Springer, 2001. X+141 p.
+\item H.H. Schaefer, M.P. Wolff. Topological Vector Spaces, New York,
+Springer New York Imprint Springer, 1999. 361 p.
+\item I. Mel’ˇcuk. Language: from Meaning to Text. Ed. by D. Beck.
+Moscow \& Boston, 2016.
+\item J. Harris. Algebraic Geometry: A First Course, New York,
+Springer, 1992. 330 p.
+\item A. Kostrikin, Yu. Manin. Linear Algebra and Geometry, Gordon
+and Breach Science Publishers, 1997. 320 p.
+\item V.V. Martynov. V tsentre soznaniya cheloveka [At the center of
+human consciousness], Minsk, BGU, 2009. 272 p.
+\item V.V. Martynov. Yazyk v prostranstve i vremeni: k probleme
+glottogeneza slavyan (2-e izd.) [Language in space and time: to
+the problem of glottogenesis of the Slavs (2nd ed.)], Moscow,
+Editorial URSS, 2004. 106 p.
+\item C. Marijuan. Finite topologies and digraphs. Proyecciones
+(Antofagasta), 2010, vol. 29, pp. 291–307.
+\item R. Penrose. The Road to Reality, Oxford, Oxford University Press,
+2004. 1094 p.
+\item A.K. Guts. Khronogeometriya. Aksiomaticheskaya teoriya otnositel’nosti [Chronogeometry. Axiomatic theory of relativity], Omsk,
+OOO “UniPak”, 2008. 340 p.
+\item M. Bansal, D. Burkett, G. de Melo, Gerard, D. Klein, Dan.
+Structured Learning for Taxonomy Induction with Belief Propagation. 52nd Annual Meeting of the Association for Computational
+\end{enumerate}
+}
+    \end{multicols}
+\end{document}
